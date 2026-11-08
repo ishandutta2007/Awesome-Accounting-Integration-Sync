@@ -1,48 +1,52 @@
-# Awesome-Accounting-Integration-Sync
+# Awesome-Accounting-Integration-Sync ⚡📊
 
-# Awesome-Accounting-Integration-Sync
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Accounting Integration &amp; Sync Banner" width="100%" />
+</p>
 
-**Top Accounting Integration Sync (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Accounting-Integration-Sync?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Accounting-Integration-Sync?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
+> **The Curated Directory of SaaS Integration Platforms & Open-Source Accounting Sync Frameworks** 🌟
+>
+> An authoritative reference for software architects, finance engineering teams, and integration specialists automating ERP, CRM, and ledger workflows across QuickBooks, NetSuite, Xero, Zoho, and Sage.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+---
 
-*Focused on CRM-to-Accounting Sync, Data Warehouse Pipelines, Bidirectional Field Mapping & Self-Hosted Connectors*
+## 📌 Table of Contents 📑
 
-**Last updated: November 2026**
+- [🌟 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Integration Platforms](#-saas--hosted-integration-platforms)
+- [💻 Open-Source GitHub Projects & Sync Frameworks](#-open-source-github-projects--sync-frameworks)
+- [📊 Architectural Comparison: Sync Approaches](#-architectural-comparison-sync-approaches)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer & Compliance](#-disclaimer--compliance)
 
+---
 
+## 🌟 Sector Overview & Market Dynamics 📈
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Accounting Integration & Sync**. These tools enable organizations to move financial data—invoices, payments, customers, and journal entries—between CRM, e-commerce, and accounting systems without manual re-entry, from fully managed iPaaS platforms with pre-built connectors to open-source frameworks that give developers control over their sync logic.
+The global **Integration Platform as a Service (iPaaS) and accounting data integration market** is estimated at **$8.5B to $19.1B** (scaling toward **$100B+** by the mid-2030s at an aggressive **12% to 24% CAGR**), while the underlying **core accounting software** sector represents an additional **$20B+** addressable base. 
 
+Structurally, the market presents a **two-tier dynamic**:
+1. **Core Accounting Ledgers (Moderately Concentrated):** Dominant mega-vendors (Intuit QuickBooks, Oracle NetSuite, Xero, Sage) anchor the primary general ledgers.
+2. **Integration & Sync Middleware (Highly Fragmented):** Unlike winner-take-all enterprise software verticals, the sync and ETL middleware layer is **highly fragmented**. Organizations juggle wildly heterogeneous stacks across CRMs (Salesforce, HubSpot, Zoho), POS systems, e-commerce engines, and data warehouses, preventing a single platform from monopolizing the space and creating immense demand for open-source connectors, horizontal iPaaS solutions, and specialized data pipelines.
 
+---
 
-**Examples** include SyncApps by Cazoomi, OneSaaS, Celigo, Zapier, Make, Dataddo, Fivetran, Stitch, Workato, and Zoho's native QuickBooks integration (the category leaders in commercial space).
+## 🏢 SaaS & Hosted Integration Platforms ☁️
 
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted accounting sync, data pipelines, and open connector infrastructure. **Critical note**: The open-source landscape is anchored by **django-ledger** for double-entry accounting and **mcp-finance** for AI-agent-driven sync across QuickBooks and Xero . No open-source project matches SyncApps' flat-rate unlimited sync or Fivetran's managed NetSuite connector depth, but for developers building custom sync pipelines, the building blocks exist.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
+*Commercial platforms providing managed connectors, visual workflows, ELT pipelines, and bidirectional ledger synchronization.*
 
 | Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Limits | Description & Best For | Trade-offs |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -57,96 +61,87 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 | **Dataddo** | **~$3.2M ARR** (Private / Bootstrapped/Seed) | Usage/consumption-based and custom tiers | 14-day free trial; limited free tier available | Managed data pipeline platform supporting Sage Business Cloud Accounting and analytics destinations. Best for automated warehouse feeds. | Analytics pipeline-oriented; lacks bidirectional CRM-to-accounting reconciliation. |
 | **SyncApps by Cazoomi** | **~$440K ARR** (Private / Bootstrapped) | Flat rate: **$150/month** (all features, unlimited records, 24/7 human support) | Free trial available; no permanent free tier | Flat-rate bidirectional integration platform syncing Salesforce, NetSuite, Zoho, Dynamics 365, and HubSpot. Best for SMBs with high transaction volumes. | Flat rate may not be cost-effective for very low sync volumes. |
 
+---
 
+## 💻 Open-Source GitHub Projects & Sync Frameworks 🛠️
 
-## Open-Source GitHub Projects
+*Open-source libraries, protocol connectors, ELT pipelines, and self-hosted accounting engines sorted in descending order of GitHub stargazers.*
 
-
-
-- **django-ledger**
-
-  **Double-entry accounting and financial analysis engine** (open source) — **the most complete open-source accounting foundation for building custom sync targets**. **Features**: **Double-entry bookkeeping**; **financial analysis**; built on Django Web Framework; API-ready for integration . **Tech stack**: Python/Django. **Deploy**: Self-hosted. **Trade-off**: **Accounting engine, not a sync connector**—it provides the ledger, not the pipeline to external systems. **Best for**: developers building custom accounting systems that need to receive synced data—especially Python/Django teams.
-
-
-
-- **mcp-finance**
-
-  **Finance and accounting MCP server for AI agents** (Apache-2.0) — **the most modern open-source accounting sync interface**, exposing accounting operations to AI agents across multiple backends. **Features**: **14 financial tools**—list invoices, create invoices, list expenses, create journal entries, reconcile transactions, get P&L, balance sheet, cash flow, and tax summary; **multi-backend**: QuickBooks Online, Xero, or local in-memory ledger for testing; **risk-classified tools** for governance gates; zero-config demo mode . **Tech stack**: Rust. **Deploy**: Self-hosted MCP server. **Trade-off**: **Agent interface, not a sync scheduler**—it provides tools for agents to act on accounting data, not a scheduled bidirectional sync engine. **Best for**: developers building AI-agent workflows that need to read and write accounting data across QBO and Xero—especially those using Claude, Cursor, or Codex.
-
-
-
-- **QuickBooks Online Python SDK**
-
-  **Python SDK for QuickBooks Online** (open source) — **the foundational library for custom QBO integrations**. **Features**: OAuth 2.0 authentication; entity CRUD operations; batch requests; report queries . **Tech stack**: Python. **Deploy**: `pip install` package. **Trade-off**: **SDK only**—no sync logic; you build the pipeline. **Best for**: Python developers building custom QuickBooks integrations from scratch.
-
-
-
-- **Odoo QuickBooks Import Module**
-
-  **Free Odoo module for QuickBooks CSV import** (open source) — **the most practical open-source migration tool** for moving from QuickBooks to Odoo. **Features**: Imports **QuickBooks Online and Desktop CSV exports** (customers, vendors, products, chart of accounts); **dry-run preview**; no duplicates . **Tech stack**: Python/Odoo. **Deploy**: Odoo module. **Trade-off**: **One-time import**, not continuous sync. **Best for**: businesses migrating from QuickBooks to Odoo ERP—not for ongoing bidirectional sync.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **ERPNext QuickBooks Migration** — Free migration tool for ERPNext v15/v16 (open source). Moves QBO master data and opening balances, then compares balances . **Note**: **One-time migration**, not sync. **Best for**: businesses moving from QuickBooks to ERPNext.
-
-- **Open bookkeeping automation engines** — Multiple GitHub projects for QBO reconciliation and write-back (Python/FastAPI) . **Note**: Early-stage; verify maturity before production. **Best for**: developers wanting reference implementations for QBO automation.
-
-
-
-**Frameworks for building custom systems**: Combine **mcp-finance** for AI-agent accounting operations with **django-ledger** as a custom ledger target and **QuickBooks Python SDK** for direct QBO integration—creating a developer-controlled sync stack. **None of these match SyncApps' flat-rate unlimited sync or Fivetran's managed NetSuite depth**, but for custom pipelines, the building blocks exist.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Accounting integration platforms handling financial data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls and audit trails.
-
-- **The "bidirectional sync platform" vs. "managed ELT" vs. "agent interface" vs. "one-time migration" distinction is critical.** **SyncApps, OneSaaS, Zapier, Make, Workato, and Zoho's native integration** are **bidirectional sync platforms**—they keep data consistent across systems in both directions . **Fivetran, Stitch, and Dataddo** are **managed ELT**—they extract to warehouses, not sync back . **mcp-finance** is an **agent interface**—it gives AI agents tools to act on accounting data, not a scheduled sync . **django-ledger** is an **accounting engine**—it is the sync target, not the connector . **Choose based on whether you need ongoing bidirectional sync, analytics extraction, agent automation, or a migration.**
-
-- **SyncApps' flat-rate $150/month** is genuinely differentiated—every integration, unlimited records, no overages . **For teams syncing multiple systems at volume, it can be dramatically cheaper than per-row or per-connection pricing.**
-
-- **Zoho's native QuickBooks integration is free** if you already use both products—two-way for core records, one-way for financial documents . **For Zoho CRM + QBO users, it eliminates middleware entirely.**
-
-- **OneSaaS's tiered pricing** ($29–$99/month) is accessible for small e-commerce, but **plan limits cap volume and app count** . **Model your order volume before choosing a tier.**
-
-- **Fivetran's NetSuite connector is the deepest managed option**—delete capture, schema drift handling, and a dedicated dbt package for financial reporting . **The trade-off**: ELT only; no write-back to NetSuite.
-
-- **mcp-finance is the most modern open-source option** for AI-agent accounting workflows—14 tools across QBO and Xero with risk classification . **The trade-off**: no scheduler; you orchestrate via agents.
-
-- Self-hosted open-source solutions require proper infrastructure and security hardening. **Financial data is highly sensitive**—ensure your deployment meets your organization's compliance requirements before syncing live transactions.
-
-
+| Project | Stars | Focus & Description | Tech Stack | License | Deployment |
+| :--- | :---: | :--- | :--- | :--- | :--- |
+| **[ERPNext](https://github.com/frappe/erpnext)** | <a href="https://github.com/frappe/erpnext/stargazers"><img src="https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white" alt="ERPNext stars" /></a> | Complete open-source ERP system featuring general ledger, automated reconciliation, and extensive REST sync APIs. | Python / Frappe / JS | GPL-3.0 | Self-hosted / Frappe Cloud |
+| **[Airbyte](https://github.com/airbytehq/airbyte)** | <a href="https://github.com/airbytehq/airbyte/stargazers"><img src="https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white" alt="Airbyte stars" /></a> | Open-source ELT data pipeline engine featuring native connectors for QuickBooks Online, Sage, Stripe, and warehouses. | Java / Python / React | MIT / ELv2 | Docker / Kubernetes |
+| **[Nango](https://github.com/NangoHQ/nango)** | <a href="https://github.com/NangoHQ/nango/stargazers"><img src="https://img.shields.io/github/stars/NangoHQ/nango?style=social&color=white" alt="Nango stars" /></a> | Unified API and integration platform with pre-built continuous sync integrations for accounting (QuickBooks, Xero, NetSuite). | TypeScript / Node.js | AGPL-3.0 | Self-hosted / Cloud |
+| **[Akaunting](https://github.com/akaunting/akaunting)** | <a href="https://github.com/akaunting/akaunting/stargazers"><img src="https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white" alt="Akaunting stars" /></a> | Free and open-source online accounting software built for small businesses with rich modular app sync architecture. | PHP / Laravel / Vue.js | GPL-3.0 | Self-hosted / Docker |
+| **[Kill Bill](https://github.com/killbill/killbill)** | <a href="https://github.com/killbill/killbill/stargazers"><img src="https://img.shields.io/github/stars/killbill/killbill?style=social&color=white" alt="Kill Bill stars" /></a> | Open-source subscription billing, payment, and financial ledger platform built for real-time invoice/payment event synchronization. | Java | Apache-2.0 | Self-hosted / Cloud |
+| **[Meltano](https://github.com/meltano/meltano)** | <a href="https://github.com/meltano/meltano/stargazers"><img src="https://img.shields.io/github/stars/meltano/meltano?style=social&color=white" alt="Meltano stars" /></a> | Declarative CLI-first data engineering framework running Singer taps (including `tap-quickbooks`) to extract and sync accounting data. | Python | MIT | Local / Docker / Cloud |
+| **[financial-datasets MCP Server](https://github.com/financial-datasets/mcp-server)** | <a href="https://github.com/financial-datasets/mcp-server/stargazers"><img src="https://img.shields.io/github/stars/financial-datasets/mcp-server?style=social&color=white" alt="financial-datasets MCP Server stars" /></a> | Model Context Protocol (MCP) server providing financial datasets, statements, and ledger insights directly to AI agents. | Python / TypeScript | MIT | MCP Client (Claude / Cursor) |
+| **[django-ledger](https://github.com/arrobalytics/django-ledger)** | <a href="https://github.com/arrobalytics/django-ledger/stargazers"><img src="https://img.shields.io/github/stars/arrobalytics/django-ledger?style=social&color=white" alt="django-ledger stars" /></a> | Double-entry accounting and financial analysis engine on Django, ideal as a self-hosted custom ledger sync target. | Python / Django | MIT | Pip package / Django app |
+| **[QuickBooks Python Client](https://github.com/routablehq/python-quickbooks)** | <a href="https://github.com/routablehq/python-quickbooks/stargazers"><img src="https://img.shields.io/github/stars/routablehq/python-quickbooks?style=social&color=white" alt="QuickBooks Python Client stars" /></a> | The standard Python library for connecting to Intuit QuickBooks Online API v3 with complete CRUD, batching, and OAuth 2.0. | Python | MIT | Pip package |
+| **[QuickBooks V3 PHP SDK](https://github.com/intuit/QuickBooks-V3-PHP-SDK)** | <a href="https://github.com/intuit/QuickBooks-V3-PHP-SDK/stargazers"><img src="https://img.shields.io/github/stars/intuit/QuickBooks-V3-PHP-SDK?style=social&color=white" alt="QuickBooks V3 PHP SDK stars" /></a> | Official Intuit PHP SDK for accessing QuickBooks Online REST APIs, handling entity synchronization and token management. | PHP | Apache-2.0 | Composer package |
+| **[Singer tap-quickbooks](https://github.com/singer-io/tap-quickbooks)** | <a href="https://github.com/singer-io/tap-quickbooks/stargazers"><img src="https://img.shields.io/github/stars/singer-io/tap-quickbooks?style=social&color=white" alt="tap-quickbooks stars" /></a> | Open-source Singer.io specification tap pulling invoices, accounts, and payments from QuickBooks Online. | Python | Apache-2.0 | Singer runner / Meltano |
+| **[QuickBooks Sync Reliability Lab](https://github.com/me-Shahsavan/quickbooks-sync-reliability-lab)** | <a href="https://github.com/me-Shahsavan/quickbooks-sync-reliability-lab/stargazers"><img src="https://img.shields.io/github/stars/me-Shahsavan/quickbooks-sync-reliability-lab?style=social&color=white" alt="QuickBooks Sync Reliability Lab stars" /></a> | Failure-mode testbench and SRE runbook catalog for hardening mission-critical QuickBooks Online sync pipelines. | Shell / Python | MIT | Self-hosted test suite |
+| **[QuickBooks Master Sync for ERPNext](https://github.com/invento-software-limited/quickbooks_master_sync)** | <a href="https://github.com/invento-software-limited/quickbooks_master_sync/stargazers"><img src="https://img.shields.io/github/stars/invento-software-limited/quickbooks_master_sync?style=social&color=white" alt="QuickBooks Master Sync stars" /></a> | Dedicated open-source Frappe/ERPNext app to sync and migrate chart of accounts, customers, vendors, and balances from QBO. | Python / Frappe | MIT | Frappe App |
 
 ---
 
+## 📊 Architectural Comparison: Sync Approaches 🔄
 
+When selecting an architecture for syncing accounting data, keep these fundamental patterns in mind:
 
-**Made for finance teams, integration engineers, and organizations building transparent accounting sync solutions.**
+1. **Bidirectional Sync Platforms (e.g., SyncApps, Zoho CRM Native, Zapier, Make, Workato):**
+   * Keep source and destination ledgers/CRMs continuous and synchronized in both directions.
+   * Handle record conflict resolution, deduplication, and status callbacks.
+2. **Managed ELT / ETL Pipelines (e.g., Airbyte, Meltano, Fivetran, Stitch, Dataddo):**
+   * Extract financial transactions to data warehouses (Snowflake, BigQuery, Databricks).
+   * Unidirectional by design; optimal for analytics, financial reporting, and audits rather than operational write-backs.
+3. **AI Agent Interfaces & MCP Servers (e.g., financial-datasets MCP Server):**
+   * Expose transactional and reporting tools to AI agents (Claude, Cursor, Codex).
+   * Enable natural-language reconciliation and autonomous accounting workflows.
+4. **Self-Hosted Double-Entry Engines (e.g., ERPNext, Akaunting, django-ledger):**
+   * Provide the target ledger with strict audit trails, debit/credit integrity, and chart-of-accounts structure.
 
-Let's make Accounting Integration & Sync more open, data-driven, and reconciliation-friendly.
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Accounting-Integration-Sync&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Accounting-Integration-Sync&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute 🚀
+
+Contributions are warmly welcome! Help make this the most comprehensive and accurate directory for accounting integration and sync:
+
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a new branch** (`git checkout -b feature/add-new-sync-tool`).
+3. 📝 **Add/edit entries in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Accounting-Integration-Sync/README.md)** following the existing table formatting:
+   - Provide platform/repo name, official links, concise description, pricing/license, and star badge.
+4. 📬 **Submit a Pull Request** with a clear explanation of why the tool is valuable for accounting integration.
+
+---
+
+## 💖 Support & Sponsorship ☕
+
+Thank you for exploring and using **Awesome-Accounting-Integration-Sync**! If this curated collection helps streamline your financial pipelines, save integration hours, or architect better systems:
+
+- ⭐ **Star the repository** to boost visibility for the developer community!
+- 🍴 **Fork and share** with fellow engineers, CFOs, and integration specialists.
+- ☕ **Buy me a coffee / Sponsor the project**: Contributions directly support ongoing research, maintenance, and curation of developer-friendly integration resources.
+
+👉 **Support via GitHub Sponsors:** [**Sponsor @ishandutta2007 on GitHub**](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## ⚖️ Disclaimer & Compliance 🛡️
+
+- This repository is a **community-curated guide** intended for informational and architectural evaluation purposes only.
+- **Financial Compliance & Data Protection:** Financial data movements are subject to stringent regional regulations (GDPR, CCPA, SOC 2, HIPAA, SOX). Ensure that appropriate end-to-end encryption, strict role-based access controls (RBAC), and immutable audit logs are active on all production sync connectors.
+- Commercial trademarks (QuickBooks, NetSuite, Xero, Sage, Zoho, etc.) belong to their respective corporate owners.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for finance teams, integration architects, and data engineers worldwide.</b><br/>
+  <i>Let's make financial data integration seamless, transparent, and resilient.</i>
+</p>
