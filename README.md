@@ -44,65 +44,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **SyncApps by Cazoomi**
-
-  **Flat-rate integration platform** for CRM, accounting, and e-commerce sync. **Pricing**: **One plan at $150/month**—every feature, every integration, unlimited records, and 24/7 human support. No tiers, no overages, free onboarding calls . **Free tier**: Free way to start (trial). **Best for**: SMBs wanting predictable pricing for bidirectional sync across Salesforce, NetSuite, Zoho, Dynamics 365, HubSpot, and more—**trade-off**: flat rate may overpay for very small volumes.
-
-
-
-- **Zoho CRM Native QuickBooks Integration**
-
-  **Native two-way sync** between Zoho CRM and QuickBooks Online. **Features**: **Two-way sync** for Contacts, Accounts, Vendors, Products; **one-way sync** (QuickBooks → CRM) for Estimates, Invoices, Purchase Orders; financial documents appear read-only in CRM with a QuickBooks Record Link; synced fields available in workflows, blueprints, and reports . **Pricing**: Included with Zoho CRM and QuickBooks subscriptions. **Free tier**: Depends on CRM/QBO plans. **Best for**: Zoho CRM users wanting native, no-middleware QuickBooks sync—**trade-off**: limited to Zoho CRM + QBO pairing.
-
-
-
-- **OneSaaS**
-
-  **Cloud integration platform** for e-commerce and accounting sync. **Pricing**: **Basic $29/month** (low-volume); **Premium $49/month**; **Unlimited $99/month**; 7-day free trial . **Free tier**: Trial only. **Best for**: small businesses wanting WooCommerce-to-QuickBooks sync at accessible prices—**trade-off**: plan tiers cap volume and app count.
-
-
-
-- **Dataddo**
-
-  **Managed data pipeline platform** with accounting connectors. **Features**: **Sage Business Cloud Accounting connector** with curated datasets, incremental hourly syncs, schema drift handling, and data residency controls . **Pricing**: Quote-only; consumption-based. **Free tier**: Trial available. **Best for**: teams wanting managed pipelines from accounting systems to warehouses—**trade-off**: pipeline-focused, not bidirectional CRM sync.
-
-
-
-- **Fivetran**
-
-  **Managed ELT platform** with deep NetSuite connector. **Features**: **NetSuite and NetSuite 2 connector** covering accounts, transactions, items, vendors, customers, subsidiaries, and custom records; incremental capture with concurrent sessions; **delete capture**; managed schema drift; dedicated **dbt package** for balance sheet, income statement, and transaction views . **Pricing**: Consumption-based (monthly active rows); **no charge for deletes and reimports** . **Free tier**: Limited trial. **Best for**: analytics teams needing reliable NetSuite data in warehouses—**trade-off**: ELT only, not bidirectional sync.
-
-
-
-- **Stitch**
-
-  **Developer-focused ETL** with accounting connectors. **Features**: Intacct, Salesforce, Zendesk, and database connectors; replicates to warehouses . **Pricing**: Tiered by row volume; 14-day free trial . **Free tier**: Trial only. **Best for**: developers wanting simple ETL to a warehouse—**trade-off**: limited bidirectional sync.
-
-
-
-- **Celigo**
-
-  **Integration platform** with NetSuite and e-commerce focus. **Pricing**: Quote-only. **Free tier**: Trial available. **Best for**: NetSuite-centric organizations needing pre-built order-to-cash flows.
-
-
-
-- **Zapier**
-
-  **No-code automation** with accounting app connectors. **Pricing**: Free tier; paid for multi-step Zaps. **Free tier**: Yes, limited. **Best for**: simple trigger-action syncs without engineering.
-
-
-
-- **Make**
-
-  **Visual automation** with accounting connectors. **Pricing**: Free tier; paid by operations. **Free tier**: Yes, limited. **Best for**: power users wanting visual flows.
-
-
-
-- **Workato**
-
-  **Enterprise automation** with recipe-based accounting sync. **Pricing**: Quote-only. **Free tier**: Trial available. **Best for**: enterprises needing governed integration.
+| Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier / Limits | Description & Best For | Trade-offs |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Zoho CRM Native QuickBooks Integration** | **~$12B – $12.5B valuation** / ~$1.4B – $1.5B revenue (Zoho Corp) | Included with Zoho CRM and QuickBooks subscriptions | Free with active CRM/QBO plans (Zoho CRM offers free tier up to 3 users) | Native two-way sync for Contacts, Accounts, Vendors, Products; one-way sync (QuickBooks → CRM) for financial docs (Invoices, Estimates, POs). Best for Zoho CRM users wanting no-middleware sync. | Limited strictly to Zoho CRM + QuickBooks Online pairing. |
+| **Workato** | **$5.7B valuation** (Series E) / ~$150M – $188M ARR | Quote-only (custom enterprise plans based on recipes/connections) | Trial available upon request; no permanent free tier | Enterprise automation platform with recipe-based accounting workflows and governance. Best for enterprise IT and finance operations. | High minimum spend; requires integration expertise. |
+| **Fivetran** | **$5.6B valuation** / ~$300M+ ARR | Consumption-based (Monthly Active Rows - MAR); free deletes and re-syncs | 14-day free trial; free tier available for very low volume (up to 500k MAR/mo) | Managed ELT data movement with deep NetSuite & NetSuite 2 connectors, schema drift handling, and dbt packages. Best for analytics data warehousing. | ELT only (extract & load to warehouse); no bidirectional write-back. |
+| **Zapier** | **$5.0B valuation** / ~$310M+ ARR | Free tier available; paid plans start at $19.99/mo (billed annually) | Free tier available: 100 tasks/month, single-step Zaps, 15-minute update interval | Visual no-code workflow automation connecting QuickBooks, Xero, FreshBooks, and 7,000+ apps. Best for simple trigger-action automations without code. | Task limits consume quickly at high sync volumes; lacks native reconciliation engine. |
+| **Make (Celonis)** | **~$13B parent valuation (Celonis)** / ~$50M – $100M ARR (Make standalone) | Free tier available; Core starts at $9/mo, Pro at $16/mo | Free tier available: 1,000 operations/month, 100MB data transfer, 15-minute intervals | Visual flow-based iPaaS with granular control and connectors to major accounting software. Best for complex multi-step automations and logic. | Steeper learning curve than Zapier; operation counting requires careful optimization. |
+| **Stitch (Qlik / Talend)** | **Acquired for $60M** (Talend later acquired for $2.4B by Thoma Bravo/Qlik) | Standard plans start at $100/mo (tiered by row volume) | 14-day free trial; no permanent free tier | Developer-friendly cloud ETL with accounting sources (Sage Intacct, etc.) replicating to data warehouses. Best for developer-driven warehouse loads. | Pipeline/ETL only; no bidirectional sync or write-back to source accounting systems. |
+| **Celigo** | **$500M+ est. valuation** ($80M+ funding) / ~$95M – $100M+ ARR | Quote-only (annual subscription based on endpoints and flows) | Free trial available; no permanent free tier | iPaaS built for NetSuite, ERPs, and e-commerce ecosystems with pre-built business process templates. Best for NetSuite-centric mid-market to enterprise businesses. | Tailored heavily toward NetSuite/ERP ecosystems; custom quotes required. |
+| **OneSaaS (Intuit QuickBooks Connector)** | **Acquired by Intuit** ($91B+ market cap / ~$21B revenue) | Basic ~$29/mo, Premium ~$49/mo, Unlimited ~$99/mo | 7-day free trial; no permanent free tier | E-commerce and CRM data integration connector bridging WooCommerce, Shopify, BigCommerce to QuickBooks Online. Best for SMB e-commerce sync. | Plan tiers enforce caps on sync volume and number of connected apps. |
+| **Dataddo** | **~$3.2M ARR** (Private / Bootstrapped/Seed) | Usage/consumption-based and custom tiers | 14-day free trial; limited free tier available | Managed data pipeline platform supporting Sage Business Cloud Accounting and analytics destinations. Best for automated warehouse feeds. | Analytics pipeline-oriented; lacks bidirectional CRM-to-accounting reconciliation. |
+| **SyncApps by Cazoomi** | **~$440K ARR** (Private / Bootstrapped) | Flat rate: **$150/month** (all features, unlimited records, 24/7 human support) | Free trial available; no permanent free tier | Flat-rate bidirectional integration platform syncing Salesforce, NetSuite, Zoho, Dynamics 365, and HubSpot. Best for SMBs with high transaction volumes. | Flat rate may not be cost-effective for very low sync volumes. |
 
 
 
