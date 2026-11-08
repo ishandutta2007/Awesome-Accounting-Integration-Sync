@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Accounting-Integration-Sync?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Accounting-Integration-Sync?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Accounting-Integration-Sync?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Accounting-Integration-Sync/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -67,7 +67,7 @@ Structurally, the market presents a **two-tier dynamic**:
 
 *Open-source libraries, protocol connectors, ELT pipelines, and self-hosted accounting engines sorted in descending order of GitHub stargazers.*
 
-| Project | Stars | Focus & Description | Tech Stack | License | Deployment |
+| Project | GitHub_Stars | Focus & Description | Tech Stack | License | Deployment |
 | :--- | :---: | :--- | :--- | :--- | :--- |
 | **[ERPNext](https://github.com/frappe/erpnext)** | <a href="https://github.com/frappe/erpnext/stargazers"><img src="https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white" alt="ERPNext stars" /></a> | Complete open-source ERP system featuring general ledger, automated reconciliation, and extensive REST sync APIs. | Python / Frappe / JS | GPL-3.0 | Self-hosted / Frappe Cloud |
 | **[Airbyte](https://github.com/airbytehq/airbyte)** | <a href="https://github.com/airbytehq/airbyte/stargazers"><img src="https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white" alt="Airbyte stars" /></a> | Open-source ELT data pipeline engine featuring native connectors for QuickBooks Online, Sage, Stripe, and warehouses. | Java / Python / React | MIT / ELv2 | Docker / Kubernetes |
@@ -116,7 +116,7 @@ Contributions are warmly welcome! Help make this the most comprehensive and accu
 1. 🍴 **Fork the repository**.
 2. 🌿 **Create a new branch** (`git checkout -b feature/add-new-sync-tool`).
 3. 📝 **Add/edit entries in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Accounting-Integration-Sync/README.md)** following the existing table formatting:
-   - Provide platform/repo name, official links, concise description, pricing/license, and star badge.
+   - Provide platform/repo name, official links, concise description, pricing/license, and Stars_Badge.
 4. 📬 **Submit a Pull Request** with a clear explanation of why the tool is valuable for accounting integration.
 
 ---
